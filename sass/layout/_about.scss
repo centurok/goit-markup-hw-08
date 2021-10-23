@@ -2,6 +2,11 @@
   padding-top: 0;
 }
 
+@media (max-width: 480px) {
+  .about-company {
+    display: none;
+  }
+}
 .about-company__title {
   font-weight: 700;
   font-size: 36px;

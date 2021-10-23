@@ -1,13 +1,13 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
   background-color: var(--bgd-very-dark-grayish-blue);
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   & .logo {
     display: inline-block;
     margin-bottom: 20px;
@@ -15,12 +15,17 @@
 }
 
 .footer-nav {
-  margin-right: 70px;
-  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-style: normal;
+  margin-bottom: 60px;
   & .ftr-link {
     font-weight: 400;
     font-size: 14px;
@@ -71,12 +76,20 @@
   }
 }
 
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .join {
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .join__title {
@@ -92,6 +105,7 @@
 
 .join-list {
   display: flex;
+  margin-bottom: 60px;
 }
 
 .join-list__item {
@@ -122,6 +136,12 @@
   fill: var(--txt-white);
 }
 
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .subscribe__title {
   font-weight: bold;
   font-size: 14px;
@@ -134,10 +154,12 @@
 
 .subscribe__box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -146,6 +168,7 @@
   outline: none;
   padding-left: 16px;
   color: var(--txt-white);
+  margin-bottom: 20px;
   &:focus,
   &:hover {
     border-color: var(--bgd-blue);

@@ -1,15 +1,18 @@
 .dignity-list {
   display: flex;
+  flex-direction: column;
+
   & > .dignity-item {
     flex-basis: auto;
   }
 }
 
 .dignity-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .dignity-item-title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -19,7 +22,7 @@
 
 .dignity-thumb {
   background-color: var(--bgd-light-grayish-blue);
-  width: 270px;
+  width: auto;
   height: 120px;
   display: flex;
   align-items: center;
@@ -31,5 +34,5 @@
   font-size: 14px;
   line-height: 1.71;
   color: var(--txt-dark-gray);
-  max-width: 270px;
+  width: auto;
 }

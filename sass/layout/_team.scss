@@ -11,7 +11,7 @@
 }
 
 .team-list {
-  display: flex;
+  // display: flex;
 }
 
 .team-list__item {
@@ -20,7 +20,7 @@
     flex-basis: auto;
   }
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 

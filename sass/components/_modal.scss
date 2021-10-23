@@ -14,8 +14,8 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+
   background-color: var(--txt-white);
   position: absolute;
   top: 50%;
@@ -162,8 +162,8 @@
   align-items: center;
   justify-content: space-around;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   cursor: pointer;
@@ -222,8 +222,8 @@
 
 .contract-link {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--txt-blue);
 }

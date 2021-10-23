@@ -37,7 +37,7 @@
 
           </ul>
         </nav>
-          <ul class="header-contacts header-contacts__list list">
+        <ul class="header-contacts header-contacts__list list">
             
             <li class="header-contact header-contact__item">
               <a href="mailto:info@devstudio.com" lang="en" class="header-contact__link link">
@@ -55,7 +55,12 @@
                 +38 096 111 11 11</a>
             </li>
 
-          </ul>
+        </ul>
+        <button class="button-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main -->
@@ -152,7 +157,7 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/igorr.jpg" alt="Игорь Демьяненко Product Designer" width="270" class="member-img" />
+              <img src="./images/igorr.jpg" alt="Игорь Демьяненко Product Designer" width="450" class="member-img" />
                 <div class="member-sign">
                   <h3 class="member-sign__title">Игорь Демьяненко</h3>
                   <p lang="en" class="member-sign__about">Product Designer</p>
@@ -190,7 +195,7 @@
                 </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/olga.jpg" alt="Ольга Репина Frontend Developer" width="270" class="member-img" />
+              <img src="./images/olga.jpg" alt="Ольга Репина Frontend Developer" width="450" class="member-img" />
                 <div class="member-sign">
                   <h3 class="member-sign__title">Ольга Репина</h3>
                   <p lang="en" class="member-sign__about">Frontend Developer</p>
@@ -227,7 +232,7 @@
                 </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/nikolayy.jpg" alt="Николай Тарасов Marketing" width="270" class="member-img" />
+              <img src="./images/nikolayy.jpg" alt="Николай Тарасов Marketing" width="450" class="member-img" />
                 <div class="member-sign">
                   <h3 class="member-sign__title">Николай Тарасов</h3>
                   <p lang="en" class="member-sign__about">Marketing</p>
@@ -264,7 +269,7 @@
                 </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/mikhail.jpg" alt="Михаил Ермаков UI Designer" width="270" class="photo-member" />
+              <img src="./images/mikhail.jpg" alt="Михаил Ермаков UI Designer" width="450" class="photo-member" />
                 <div class="member-sign">
                   <h3 class="member-sign__title">Михаил Ермаков</h3>
                   <p lang="en" class="member-sign__about">UI Designer</p>
@@ -476,6 +481,58 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close js-close-menu">
+        <svg class="menu-close__button" width="18.67" height="18.67">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-list list">
+      
+        <li class="menu-list__item">
+          <a href="./index.html" class="menu-list__link link">Студия</a>
+        </li>
+      
+        <li class="menu-list__item">
+          <a href="./portfolio.html" class="menu-list__link link">Портфолио</a>
+        </li>
+      
+        <li class="menu-list__item">
+          <a href="" class="menu-list__link link">Контакты</a>
+        </li>
+      
+      </ul>
+
+      <ul class="menu-contact__list list">
+      
+        <li class="menu-contact__item">
+          <a href="tel:+380961111111" class="menu-contact__link menu-contact__tel link">
+            +38 096 111 11 11</a>
+        </li>
+
+        <li class="menu-contact__item">
+          <a href="mailto:info@devstudio.com" lang="en" class="menu-contact__link menu-contact__mail link">
+          info@devstudio.com</a>
+        </li>
+        </ul>
+      <ul class="social__list list">
+        <li class="social__item">
+          <a href="" class="social__link link">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link link">Twitter</a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link link">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link link">LinkedIn</a>
+        </li>
+      </ul>
+       
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile_menu.js"></script>
   </body>
 </html>

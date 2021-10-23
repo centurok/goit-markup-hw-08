@@ -1,11 +1,16 @@
 .buttons__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 56px;
+  flex-wrap: wrap;
+
+  margin-bottom: 25px;
   & .buttons__button.current {
     background-color: var(--bgd-blue);
     color: var(--txt-white);
   }
+}
+
+.buttons__item {
+  margin-bottom: 15px;
 }
 
 .buttons__button {
@@ -37,9 +42,7 @@
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  flex-direction: column;
 }
 
 .projects__link {
@@ -55,10 +58,7 @@
 
 .projects__item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .projects > & {
-    display: flex;
-    flex-basis: calc(100% / 3 - 30px);
-    margin-right: 30px;
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -96,7 +96,7 @@
   color: var(--txt-white);
   top: 0;
   left: 0;
-  width: 370px;
+  width: 450px;
   height: 100%;
   padding: 63px 24px;
   transform: translateY(101%);
