@@ -1,0 +1,40 @@
+.about-company {
+  padding-top: 0;
+}
+
+.about-company__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-company__list {
+  display: flex;
+}
+
+.about-company__item {
+  list-style: none;
+  display: flex;
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about-company__text {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--txt-white);
+  text-transform: uppercase;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+}

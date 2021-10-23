@@ -1,0 +1,35 @@
+.dignity-list {
+  display: flex;
+  & > .dignity-item {
+    flex-basis: auto;
+  }
+}
+
+.dignity-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.dignity-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.dignity-thumb {
+  background-color: var(--bgd-light-grayish-blue);
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.dignity-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--txt-dark-gray);
+  max-width: 270px;
+}
