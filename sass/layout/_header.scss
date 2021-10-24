@@ -3,9 +3,10 @@
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  @include flex(flex, space-between, center, null, null);
 }
 
 .header-logo {
@@ -19,11 +20,12 @@
 }
 
 .header-logo__second {
-  font-family: 'Raleway', sans-serif;
-  color: var(--txt-black);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  // font-family: 'Raleway', sans-serif;
+  // color: var(--txt-black);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  @include font('Raleway', 26px, 700, 1.19, null, var(--txt-black));
 }
 
 .header-nav {
@@ -86,8 +88,9 @@
 }
 
 .header-contacts {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  @include flex(flex, null, center, null, null);
 }
 
 @media (max-width: 480px) {

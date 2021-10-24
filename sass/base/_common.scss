@@ -16,13 +16,15 @@ body {
 }
 
 .container {
-  // width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  // width: 100%;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  // margin: 0 auto;
+  @include container(100%, 15px, 15px, auto, auto, null);
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    @include container(480px, 15px, 15px, auto, auto, null);
+    // width: 480px;
   }
 }
 
@@ -35,10 +37,19 @@ img {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+  @include section(60px, 60px);
 }
 
 .logo {
   text-decoration: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
