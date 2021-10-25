@@ -16,14 +16,12 @@ body {
 }
 
 .container {
-  // width: 100%;
-  // padding-left: 15px;
-  // padding-right: 15px;
-  // margin: 0 auto;
-  @include container(100%, 15px, 15px, auto, auto, null);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    @include container(480px, 15px, 15px, auto, auto, null);
+    @include container(100%, 15px, 15px, auto, auto, null);
     // width: 480px;
   }
 }
