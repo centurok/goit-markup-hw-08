@@ -7,6 +7,13 @@
     background-color: var(--bgd-blue);
     color: var(--txt-white);
   }
+
+  @media screen and(min-width: 768px) {
+    & {
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+  }
 }
 
 .buttons__item {
@@ -43,6 +50,13 @@
 .projects {
   display: flex;
   flex-direction: column;
+
+  @media screen and(min-width: 768px) {
+    & {
+      flex-direction: row;
+      @include list(flex, wrap, null, -30px, -30px, null);
+    }
+  }
 }
 
 .projects__link {
@@ -60,6 +74,12 @@
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media screen and(min-width: 768px) {
+    .projects > & {
+      @include item(null, 30px, 30px, null, 2, 30px);
+    }
   }
 }
 

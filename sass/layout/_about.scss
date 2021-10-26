@@ -1,12 +1,13 @@
 .about-company {
   padding-top: 0;
-}
 
-@media (max-width: 480px) {
-  .about-company {
-    display: none;
+  @media screen and(max-width: 1200px) {
+    & {
+      display: none;
+    }
   }
 }
+
 .about-company__title {
   font-weight: 700;
   font-size: 36px;

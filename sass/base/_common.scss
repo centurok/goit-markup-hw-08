@@ -21,8 +21,16 @@ body {
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    @include container(100%, 15px, 15px, auto, auto, null);
+    @include container(100%, null, null, null, null, null);
     // width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include container(768px, null, null, null, null, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include container(1200px, null, null, null, null, null);
   }
 }
 

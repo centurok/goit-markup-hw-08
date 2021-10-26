@@ -16,6 +16,12 @@
 
 .clients__item {
   @include item(30px, null, null, 30px, 2, 30px);
+
+  @media screen and(min-width: 768px) {
+    & {
+      @include item(30px, null, null, 30px, 3, 30px);
+    }
+  }
 }
 
 .clients__link {
