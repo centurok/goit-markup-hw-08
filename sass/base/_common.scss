@@ -30,7 +30,7 @@ body {
   }
 
   @media screen and (min-width: 1200px) {
-    @include container(1200px, null, null, null, null, null);
+    @include container(1200px, null, null, auto, auto, null);
   }
 }
 

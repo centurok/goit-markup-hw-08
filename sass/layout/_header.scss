@@ -30,6 +30,11 @@
   // line-height: 1.19;
 
   @include font('Raleway', 24px, 700, 1.16, null, var(--txt-blue));
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 26px, null, 1.19, null, null);
+    margin-right: 73px;
+  }
 }
 
 .header-logo__second {
@@ -39,6 +44,9 @@
   // font-size: 26px;
   // line-height: 1.19;
   @include font('Raleway', 24px, 700, 1.16, null, var(--txt-black));
+  @media screen and (min-width: 1200px) {
+    @include font(null, 26px, null, 1.19, null, null);
+  }
 }
 
 // .header-nav {
@@ -110,6 +118,10 @@
       align-items: center;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 @media (max-width: 767px) {
@@ -127,9 +139,12 @@
 //   justify-content: center;
 // }
 
-// .header-contact__item:not(:last-child) {
-//   margin-right: 50px;
-// }
+.header-contact__item:not(:last-child) {
+  // margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
 
 .mail-icon {
   margin-right: 10px;
@@ -161,6 +176,10 @@
     & {
       padding: 0;
     }
+  }
+
+  @media screen and(min-width: 1200px) {
+    @include font(null, 14px, 500, 1.14, 0.02em, var(--txt-dark-gray));
   }
 }
 
