@@ -12,6 +12,10 @@
   // justify-content: space-between;
   // flex-wrap: wrap;
   @include list(flex, wrap, -30px, null, null, -30px);
+
+  @media screen and(min-width: 1200px) {
+    @include list(null, nowrap, 0px, null, null, 0px);
+  }
 }
 
 .clients__item {
@@ -20,6 +24,12 @@
   @media screen and(min-width: 768px) {
     & {
       @include item(30px, null, null, 30px, 3, 30px);
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    @include item(0px, null, null, 0px, 0, 0px);
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }
