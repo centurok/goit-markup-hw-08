@@ -132,6 +132,7 @@
   @media screen and (min-width: 1200px) {
     align-items: unset;
     margin-right: auto;
+    width: 100%;
   }
 }
 
@@ -237,6 +238,13 @@
   @media screen and(min-width: 768px) {
     & {
       width: 450px;
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    & {
+      width: 358px;
+      margin-right: 12px;
     }
   }
 }

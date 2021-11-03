@@ -130,15 +130,21 @@
           <h2 class="about-company__title">Чем мы занимаемся</h2>
           <ul class="about-company__list">
             <li class="about-company__item">
-              <img src="./images/code.jpg" alt="Написание кода" width="370" class="about-company-photo" />
+              <picture>
+                <img  srcset="./images/about/code-desktop.jpg 1x, ./images/about/code-desktop@2x.jpg 2x" src="./images/code-desktop.jpg" alt="Написание кода" width="370" class="about-company-photo" />
+              </picture>
               <p class="about-company__text">Десктопные приложения</p>
             </li>
             <li class="about-company__item">
-              <img src="./images/phone.jpg" alt="Адаптация под телефон" width="370" class="about-company__photo" />
+              <picture>
+                <img srcset="./images/about/phone-desktop.jpg 1x, ./images/about/phone-desktop@2x.jpg 2x" src="./images/phone-desktop.jpg" alt="Адаптация под телефон" width="370" class="about-company__photo" />
+              </picture>
               <p class="about-company__text">Мобильные приложения</p>
             </li>
             <li class="about-company__item">
-              <img src="./images/tablet.jpg" alt="Адаптация под планшет" width="370" class="about-company__photo" />
+              <picture>
+                <img srcset="./images/about/tablet-desktop.jpg 1x, ./images/about/tablet-desktop@2x.jpg 2x" src="./images/tablet-desktop.jpg" alt="Адаптация под планшет" width="370" class="about-company__photo" />
+              </picture>
               <p class="about-company__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -150,7 +156,15 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/igorr.jpg" alt="Игорь Демьяненко Product Designer" width="450" class="member-img" />
+              <picture>
+                <source srcset="./images/team/igor-mobile.jpg 1x, ./images/team/igor-mobile@2x.jpg 2x"
+                type="image/jpeg" media="(max-width: 767px)">
+                <source srcset="./images/team/igor-tablet.jpg 1x, ./images/team/igor-tablet@2x.jpg 2x" type="image/jpeg"
+                  media="(max-width: 1199px)">
+                <source srcset="./images/team/igor-desktop.jpg 1x, ./images/team/igor-desktop@2x.jpg 2x" type="image/jpeg"
+                  media="(min-width: 1200px)">
+                <img src="./images/team/igor-mobile.jpg" alt="Игорь Демьяненко Product Designer" class="member-img" />
+              </picture>
                 <div class="member-sign">
                   <h3 class="member-sign__title">Игорь Демьяненко</h3>
                   <p lang="en" class="member-sign__about">Product Designer</p>
@@ -188,7 +202,15 @@
                 </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/olga.jpg" alt="Ольга Репина Frontend Developer" width="450" class="member-img" />
+              <picture>
+                <source srcset="./images/team/olga-mobile.jpg 1x, ./images/team/olga-mobile@2x.jpg 2x" type="image/jpeg" 
+                  media="(max-width: 767px)">
+                <source srcset="./images/team/olga-tablet.jpg 1x, ./images/team/olga-tablet@2x.jpg 2x" type="image/jpeg"
+                  media="(max-width: 1199px)">
+                <source srcset="./images/team/olga-desktop.jpg 1x, ./images/team/olga-desktop@2x.jpg 2x" type="image/jpeg"
+                  media="(min-width: 1200px)">
+                <img src="./images/team/olga-mobile.jpg" alt="Ольга Репина Frontend Developer" class="member-img" />
+              </picture>
                 <div class="member-sign">
                   <h3 class="member-sign__title">Ольга Репина</h3>
                   <p lang="en" class="member-sign__about">Frontend Developer</p>
@@ -225,7 +247,15 @@
                 </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/nikolayy.jpg" alt="Николай Тарасов Marketing" width="450" class="member-img" />
+              <picture>
+                <source srcset="./images/team/nikolay-mobile.jpg 1x, ./images/team/nikolay-mobile@2x.jpg 2x" type="image/jpeg" 
+                  media="(max-width: 767px)">
+                <source srcset="./images/team/nikolay-tablet.jpg 1x, ./images/team/nikolay-tablet@2x.jpg 2x" type="image/jpeg"
+                  media="(max-width: 1199px)">
+                  <source srcset="./images/team/nikolay-desktop.jpg 1x, ./images/team/nikolay-desktop@2x.jpg 2x" type="image/jpeg"
+                    media="(min-width: 1200px)">
+                <img src="./images/team/nikolay-mobile.jpg" alt="Николай Тарасов Marketing" class="member-img" />
+              </picture>
                 <div class="member-sign">
                   <h3 class="member-sign__title">Николай Тарасов</h3>
                   <p lang="en" class="member-sign__about">Marketing</p>
@@ -262,7 +292,15 @@
                 </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/mikhail.jpg" alt="Михаил Ермаков UI Designer" width="450" class="photo-member" />
+              <picture>
+                <source srcset="./images/team/mikhail-mobile.jpg 1x, ./images/team/mikhail-mobile@2x.jpg 2x" type="image/jpeg" 
+                  media="(max-width: 767px)">
+                <source srcset="./images/team/mikhail-tablet.jpg 1x, ./images/team/mikhail-tablet@2x.jpg 2x" type="image/jpeg"
+                  media="(max-width: 1199px)">
+                  <source srcset="./images/team/mikhail-desktop.jpg 1x, ./images/team/mikhail-desktop@2x.jpg 2x" type="image/jpeg"
+                    media="(min-width: 1200px)">
+                <img src="./images/team/mikhail-mobile.jpg" alt="Михаил Ермаков UI Designer" class="photo-member" />
+              </picture>
                 <div class="member-sign">
                   <h3 class="member-sign__title">Михаил Ермаков</h3>
                   <p lang="en" class="member-sign__about">UI Designer</p>
@@ -523,7 +561,6 @@
           <a href="" class="social__link link">LinkedIn</a>
         </li>
       </ul>
-       
     </div>
     <script src="./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

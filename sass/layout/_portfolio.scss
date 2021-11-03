@@ -57,6 +57,13 @@
       @include list(flex, wrap, null, -30px, -30px, null);
     }
   }
+
+  @media screen and(min-width: 1200px) {
+    & {
+      flex-direction: row;
+      @include list(flex, wrap, null, -30px, -30px, null);
+    }
+  }
 }
 
 .projects__link {
@@ -82,6 +89,12 @@
   @media screen and(min-width: 768px) {
     .projects > & {
       @include item(null, 30px, 30px, null, 2, 30px);
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    .projects > & {
+      @include item(null, 30px, 30px, null, 3, 30px);
     }
   }
 }
@@ -128,7 +141,7 @@
   color: var(--txt-white);
   top: 0;
   left: 0;
-  width: 450px;
+  width: 100%;
   height: 100%;
   padding: 63px 24px;
   transform: translateY(101%);
