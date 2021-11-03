@@ -182,10 +182,16 @@ h6 {
 .modal-form__title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__form {
@@ -296,6 +302,13 @@ h6 {
   letter-spacing: 0.03em;
   margin-bottom: 31px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .label-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__button {
@@ -752,10 +765,17 @@ h6 {
 
 .team-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -862,12 +882,19 @@ h6 {
 }
 
 .clients__title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--txt-mostly-black);
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients__list {

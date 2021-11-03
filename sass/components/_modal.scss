@@ -54,10 +54,14 @@
 .modal-form__title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+
+  @media screen and(min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal__form {
@@ -166,6 +170,11 @@
   letter-spacing: 0.03em;
   margin-bottom: 31px;
   cursor: pointer;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__button {
