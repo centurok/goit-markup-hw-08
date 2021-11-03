@@ -77,6 +77,11 @@
   max-width: 660px;
   margin: auto;
   margin-bottom: 30px;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {

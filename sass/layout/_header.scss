@@ -22,7 +22,7 @@
 
 .header-logo {
   padding: 24px 0px 25px 0px;
-  margin-right: 88px;
+  margin-right: auto;
   // font-family: 'Raleway', sans-serif;
   // color: var(--txt-blue);
   // font-weight: 700;
@@ -33,7 +33,6 @@
 
   @media screen and (min-width: 1200px) {
     @include font(null, 26px, null, 1.19, null, null);
-    margin-right: 73px;
   }
 }
 
