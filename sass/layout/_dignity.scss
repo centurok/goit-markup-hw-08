@@ -35,6 +35,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and(min-width: 768px) {
+    text-align: unset;
+  }
 }
 
 .dignity-thumb {

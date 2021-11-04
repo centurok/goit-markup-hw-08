@@ -23,11 +23,6 @@
 .header-logo {
   padding: 24px 0px 25px 0px;
   margin-right: auto;
-  // font-family: 'Raleway', sans-serif;
-  // color: var(--txt-blue);
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
 
   @include font('Raleway', 24px, 700, 1.16, null, var(--txt-blue));
 
@@ -47,12 +42,6 @@
     @include font(null, 26px, null, 1.19, null, null);
   }
 }
-
-// .header-nav {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
 
 .header-list {
   display: flex;
@@ -139,6 +128,9 @@
 // }
 
 .header-contact__item:not(:last-child) {
+  @media screen and(min-width: 768px) {
+    margin-bottom: 10px;
+  }
   // margin-right: 50px;
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
@@ -155,11 +147,7 @@
 
 .header-contact__link {
   font-family: 'Roboto', sans-serif;
-  // color: var(--txt-dark-gray);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
+
   @include font(null, 12px, 500, 1.16, 0.02em, var(--txt-dark-gray));
   align-items: center;
   display: inline-flex;
@@ -184,12 +172,10 @@
 
 @media screen and (min-width: 768px) {
   .mail-link {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
   }
   .tel-link {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
 }
 

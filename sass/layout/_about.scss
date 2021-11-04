@@ -4,6 +4,10 @@
       display: none;
     }
   }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 0;
+  }
 }
 
 .about-company__title {
