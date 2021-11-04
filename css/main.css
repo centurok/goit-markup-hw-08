@@ -1598,6 +1598,12 @@ h6 {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 410px) {
+  .social__item:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
+
 .social__item:not(:first-child) {
   padding-left: 10px;
 }
