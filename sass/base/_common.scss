@@ -20,8 +20,8 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 
-  @media screen and (max-width: 767px) {
-    @include container(100%, null, null, null, null, null);
+  @media screen and (min-width: 480px) {
+    @include container(480px, null, null, null, null, null);
   }
 
   @media screen and (min-width: 768px) {

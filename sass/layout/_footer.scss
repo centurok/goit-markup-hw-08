@@ -41,6 +41,7 @@
   @media screen and (min-width: 1200px) {
     display: block;
     margin-right: auto;
+    margin-bottom: 0;
     width: 100%;
   }
 }
@@ -258,6 +259,7 @@
     & {
       width: 358px;
       margin-right: 12px;
+      margin-bottom: 0;
     }
   }
 }

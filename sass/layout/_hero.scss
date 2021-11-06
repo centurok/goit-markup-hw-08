@@ -70,19 +70,24 @@
 
 .hero-title {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 6vw;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--txt-white);
-  max-width: 660px;
+  max-width: 400px;
   margin: auto;
   margin-bottom: 30px;
+
+  @media screen and(min-width: 480px) {
+    font-size: 26px;
+  }
 
   @media screen and(min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 660px;
   }
 }
 
